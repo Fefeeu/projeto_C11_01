@@ -2,7 +2,7 @@
 import pandas as pd
 df = pd.read_csv('perguntas/data/Ano-2024.csv', sep=';', encoding='utf-8')
 #%%
-#9. Quais deputados têm os gastos mais consistentes? (menor variacao)
+#9. Quais são os 10 deputados que têm os gastos mais consistentes? (menor variacao)
 
 df_9 = df.copy()
 df_9['datEmissao'] = pd.to_datetime(df_9['datEmissao'])
@@ -17,5 +17,6 @@ df_mesPorParlamentar['GastoTotal'] = df_mesPorParlamentar[colunas_meses].sum(axi
 primeiro_quartil = df_mesPorParlamentar['GastoTotal'].quantile(0.25)
 df_mesPorParlamentarFiltrado = df_mesPorParlamentar[df_mesPorParlamentar['GastoTotal']>primeiro_quartil]
 df_mesPorParlamentarFiltrado = df_mesPorParlamentarFiltrado.sort_values('DesvPadrao', ascending=True)[:10]
+print(df_mesPorParlamentarFiltrado)
 df_mesPorParlamentarFiltrado.to_excel('perguntas/data/MesPorParlamentar.xlsx')
 # %%

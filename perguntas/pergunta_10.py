@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 df = pd.read_csv('perguntas/data/Ano-2024.csv', sep=';')
 
 #%%
-#10. É possível prever o gasto mensal de um deputado com base nos meses anteriores?
+#10. É possível prever o gasto mensal da câmara com base nos meses anteriores?
 df_10 = df.copy()
 df_10['datEmissao'] = pd.to_datetime(df_10['datEmissao'])
 df_10['mesEmissao'] = df_10['datEmissao'].dt.month
