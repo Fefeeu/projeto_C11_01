@@ -20,7 +20,7 @@ plt.figure(dpi=400)
 plt.title("Gasto médio por parlamentar em cada partido")
 plt.barh(df_partidos['txQtdParlamentar'], 
          df_partidos['vlrPorParlamentar'], 
-         label='Gasto em Milhar')
+         label='Gastos em Milhares')
 plt.grid(True, axis='x', linestyle='--')
 plt.legend()
 plt.show()
