@@ -9,4 +9,6 @@ df_porFornecedor['txtDescricao'] = df.groupby('txtFornecedor')['txtDescricao'].f
 df_porFornecedor = df_porFornecedor.sort_values('vlrLiquido',ascending=False)
 print(df_porFornecedor.head(10))
 
+excel = df_porFornecedor.head(10)
+excel.to_excel('perguntas/resposta_pergunta_03.xlsx')
 # %%

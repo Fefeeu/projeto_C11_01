@@ -16,7 +16,7 @@ df_partidos['vlrPorParlamentar'] = round(df_partidos['vlrPorParlamentar'], 2)
 df_partidos = df_partidos.sort_values('vlrPorParlamentar')
 df_partidos['txQtdParlamentar'] = df_partidos.index.astype(str) + ' ' + df_partidos['qtdParlamentar'].astype(str).str.zfill(3)
 
-plt.figure(dpi=400)
+plt.figure(dpi=200, layout='compressed')
 plt.title("Gasto médio por parlamentar em cada partido")
 plt.barh(df_partidos['txQtdParlamentar'], 
          df_partidos['vlrPorParlamentar'], 
