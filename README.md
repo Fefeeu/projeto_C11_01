@@ -13,11 +13,11 @@ Para esse projeto estamos utilizando o site [dadosabertos.camara.leg.br](https:/
 ## Perguntas a serem respondidas
 1. Qual a comparação de gastos médios entre deputados?
 2. Quais foram as categorias de despesa mais frequentes?
-3. Quais fornecedores receberam os maiores valores totais?
+3. Quais os 10 fornecedores que receberam os maiores valores totais?
 4. Qual o valor médio e o desvio padrão das despesas por categoria?
 5. Há deputados com glosas *(valores recusados)* significativamente altas?
 6. Quais deputados mais gastaram em cada tipo de despesa?
 7. Qual é o gasto médio por parlamentar em cada partido?
 8. Qual a variação de gastos ao longo dos meses para cada partido?
-9. Quais deputados têm os gastos mais consistentes?
-10. É possível prever o gasto mensal de um deputado com base nos meses anteriores?
+9. Quais são os 10 deputados que têm os gastos mais consistentes? (menor variacao)
+10. É possível prever o gasto mensal da câmara com base nos meses anteriores?
