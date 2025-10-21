@@ -3,7 +3,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../data/Ano-2024.csv", sep=';')
+df = pd.read_csv("data/Ano-2024.csv", sep=';')
 
 partidos = df[df['sgPartido'].notnull()].groupby('sgPartido')
 

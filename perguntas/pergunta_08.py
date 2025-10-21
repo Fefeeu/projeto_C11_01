@@ -3,7 +3,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../data/Ano-2024.csv", sep=';')
+df = pd.read_csv("data/Ano-2024.csv", sep=';')
 
 gasto_mes_partidos = df.groupby(['sgPartido', 'numMes'])['vlrLiquido'].sum()
 gasto_mes_partidos = gasto_mes_partidos/1000000
